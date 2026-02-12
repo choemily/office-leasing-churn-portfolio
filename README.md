@@ -2,6 +2,14 @@
   <img src="images/banner.png" alt="Project Banner" width="100%">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
+  <img src="https://img.shields.io/github/last-commit/choemily/office-leasing-churn-portfolio">
+  <img src="https://img.shields.io/github/repo-size/choemily/office-leasing-churn-portfolio">
+  <img src="https://img.shields.io/badge/Model-LogReg%20%7C%20LightGBM-orange.svg">
+  <img src="https://img.shields.io/badge/Status-Active-success.svg">
+</p>
+
 # Office Leasing Churn Prediction (Portfolio Project)
 
 > **Purpose**: A presentation of a **tenant churn prediction** workflow for office landlords. It includes data generation (synthetic), feature engineering, model training (**Logistic Regression** vs **Gradient Boosting**), evaluation, and reporting.
