@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="images/banner.png" alt="Project Banner" width="100%">
+</p>
 
 # Office Leasing Churn Prediction (Portfolio Project)
 
