@@ -1,0 +1,34 @@
+
+# Global configuration for churn project
+random_seed: 2026
+
+data:
+  label_col: label
+  id_cols: [tenant_id, property_id]
+  date_col: ref_month
+  revenue_col: revenue_at_risk
+
+features:
+  numeric: [months_to_expiry, area_sqft, eff_rent_psf, rent_gap, late_pays_12m, tickets_12m, satisfaction]
+  categorical: [industry, submarket]
+  drop: [lease_start, lease_expiry]
+
+train:
+  test_size: 0.2
+  valid_size: 0.2
+  stratify: true
+
+models:
+  logreg:
+    C: 1.0
+    penalty: l2
+    max_iter: 200
+    class_weight: balanced
+  lgbm:
+    n_estimators: 600
+    learning_rate: 0.05
+    max_depth: -1
+    subsample: 0.9
+    colsample_bytree: 0.9
+    reg_alpha: 0.0
+    reg_lambda: 0.0
